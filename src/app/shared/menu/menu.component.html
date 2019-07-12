@@ -1,0 +1,6 @@
+<nav>
+  <div *ngFor="let menuItem of menu"
+       (click)="navigate(menuItem)">
+    {{ menuItem.label }}
+  </div>
+</nav>
