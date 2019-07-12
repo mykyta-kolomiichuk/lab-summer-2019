@@ -8,6 +8,6 @@ export class CanActivateAboutService implements CanActivate {
 
   canActivate(): boolean {
     console.log('About: try to activate');
-    return false;
+    return true;
   }
 }

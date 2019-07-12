@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactsResolver } from './resolvers/contacts.resolver';
 import { CanActivateAboutService } from './guards/can-activate-about.service';
+import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
           CanActivateAboutService
         ],
         component: AboutComponent
+      },
+      {
+        path: 'post/:id',
+        component: PostComponent
       },
       {
         path: 'contacts',

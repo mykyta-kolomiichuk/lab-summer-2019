@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommunicationModule } from './communication/communication.module';
 
 @NgModule({
-  declarations: [],
-  imports: []
+  imports: [
+    CommunicationModule
+  ]
 })
 export class CoreModule { }
