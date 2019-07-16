@@ -23,6 +23,10 @@ export class HomeService {
       {
         label: 'Contacts',
         url: 'contacts'
+      },
+      {
+        label: 'User Posts',
+        url: 'user-posts'
       }
     ];
   }

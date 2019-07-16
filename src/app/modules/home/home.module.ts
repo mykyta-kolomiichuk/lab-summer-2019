@@ -6,13 +6,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PostComponent } from './post/post.component';
+import { UserPostsComponent } from './user-posts/user-posts.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     AboutComponent,
     ContactsComponent,
-    PostComponent
+    PostComponent,
+    UserPostsComponent
   ],
   providers: [
     HomeService

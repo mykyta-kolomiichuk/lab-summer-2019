@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <form [formGroup]="form"
+          (ngSubmit)="submit()"
+          autocomplete=off
+          novalidate>
+      <label for="userIdInput">User ID:</label>
+      <input type="text"
+             id="userIdInput"
+             formControlName="user">
+      <button type="submit"
+              [disabled]="form.invalid">Get Posts</button>
+      <button type="button"
+              (click)="reset()">Reset</button>
+    </form>
+  </div>
+  <div>
+    <div *ngFor="let post of posts">
+      {{ post.userId}} : {{ post.title }}
+    </div>
+  </div>
+</div>

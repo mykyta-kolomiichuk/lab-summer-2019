@@ -24,6 +24,13 @@ export class PostsApiService {
     );
   }
 
+  $getByUser(id: string): Observable<Post[]> {
+    const params = { userId: id };
+    return this.http.get<PostDto[]>(`https://jsonplaceholder.typicode.com/posts`, { params }).pipe(
+      map((response: PostDto[]) => this.mapList(response))
+    );
+  }
+
   private mapList(response: PostDto[]): Post[] {
     return response.map((item: PostDto) => this.mapToPost(item));
   }
